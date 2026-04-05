@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projects</title>
+	<style>
+		
+		body{
+			background: black;
+			
+		}
+		html{
+			font-size: 18px;
+			color: white;
+		}
+		.info01{
+			 font-size: 20px;
+          text-align: center;
+          background: linear-gradient(45deg, #ff4d4d, #4d79ff);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+		}
+		.head{
+			background-color: #282424;
+			height: 27px;
+			text-align: right;
+			width: 100%;
+            
+		}
+		/*.logo{
+			margin-right: 86%;
+			text-decoration: none;
+			color: whitesmoke;
+			font-family: Cascadia Mono;
+		  }*/
+		.hii{
+
+			position: fixed;
+			width: 98%;
+			background-color: #282424;
+			border-radius: 5px;
+			border: 2px solid;
+			border-image: linear-gradient(to right, blue, yellow) 1;
+		}
+
+		.page1{
+			text-decoration: none;
+			padding: 18px;
+			margin: 4px;
+			color: whitesmoke;
+			position: relative ;
+			font-size: 20px;
+			}
+				
+		.page1:hover{
+  			text-decoration: none;
+  			color: gray;
+
+  		}
+  		.page1::after{
+  			content: "";
+			position: absolute;
+       		        width: 0;
+			height: 2px;
+		        background: #0000ff;
+		        left: 0;
+			bottom: -5px;
+			transition: 0.3s;
+			margin-bottom: 20px;
+  		}
+  		.page1.active::after {
+			 width: 100%;
+					  
+		}
+		.page1:hover::after {
+			width: 100%;
+
+						  
+		}
+		.home{
+			text-decoration: none;
+			font-size: 16px;
+			text-wrap: 4px;
+			font-weight: 10px;
+			color: ghostwhite;
+			margin-left: 20px;
+			border-radius: 4px;
+			border: 2px solid;
+		}
+		.home:hover{
+		   border: 2px solid;
+		   border-radius: 5px;
+		  color: yellow;
+		   transform: scale(1.2);
+
+		}
+		.section21{
+			margin-top:2% ;
+			display: flex;
+
+		}
+		.div1{
+			
+			border: 2px solid;
+			padding: 12px;
+			 margin: 5px;
+			 width: 50%px;
+			 height: 5%;
+			 margin-left: 3%;
+			 border-radius: 10px;
+			 border: 2px solid;
+
+
+		}
+		.div2{
+           
+		      border: 2px solid;
+		      padding: 12px;
+		      margin: 5px;
+	              width: 60%;
+		      height: -5%;
+		      margin-left: 10px;
+		      border-radius: 10px;
+		      border: 2px solid;
+		}
+		p{
+			font-size: 8px;
+		}
+		.div1:hover{
+			background-color: #242222;
+			transform: scale(1.1);
+
+
+		}
+		.div2:hover{
+			background-color: #242222;
+			transform: scale(1.1);
+		}
+		.clickme{
+			background-color: transparent;
+			border: 2px solid;
+			border-radius: 5px;
+			margin-left: 25%;
+		}
+
+
+	</style>
+</head>
+<body>
+        		
+    <header class="head">
+		 <!-- <a href="#" class="logo"></a> -->
+		<nav class="hii">
+			
+		 <a href="index.html" class="page1">Home</a>
+		 <a href="Projects.html" class="page1 active">Project </a>
+		
+		 <a href="sms.html" class="page1">contact </a>
+		 <a href="About.html" class="page1">About </a>
+		
+	</header>
+             <h4 class="info01" id="heading"> </h4>
+        <section class="section21"> 
+		<div class="div1" onclick="libraryproject()">
+        	     <h4> Library Management 
+        	     	<br>System</h1>
+        	        <p> A responsive web-based application developed to manage books, users, andissue–return operations efficiently.
+			It improves library workflow by reducing manual tasks and providing secure, accurate, and fast data handling.
+					<div class="div1a"> <label> Using technologies</label>
+						<p> HTML , CSS , JS </p>
+					</div>
+					<button class="clickme">View Project!</button>
+			</p>
+        
+		</div>
+		<div class="div2" onclick="todoapp()">
+
+			<h4 id="bookstore"> To-D0 App</h1>
+			<p>	This Todo App is designed to help users organize their daily activities in a simple and effective way. It allows users to create tasks, edit them, mark them as completed, and delete them when no longer needed. The application ensures a user-friendly interface with fast performance and responsive design.
+		<div class="div2a"> <label> Using technologies</label>
+						<p> HTML , CSS , JS </p>
+		</div>
+				<button class="clickme"> View Project!</button>
+			</p>
+
+		</div>
+
+
+		<div class="div2" onclick="weatherapp()" >
+			<h4 >  Weather App</h1>
+			<p>	This Weather App is a simple and user-friendly application designed to provide real-time weather information for any location. Users can easily search for a city and get instant updates about current weather conditions.
+
+The app displays important weather details such as temperature, humidity, wind speed, and overall weather conditions. It focuses on delivering accurate data with a clean and responsive user interface.
+				<div class="div2a"> <label> Using technologies</label>
+						<p> HTML , CSS , JS </p>
+				</div>
+				<button class="clickme"> View Project !</button>
+			</p>
+
+			</div>
+
+			<div class="div2" onclick="calculator()">
+			<h4> calculator</h1>
+			<p>	This Calculator App is a simple and efficient tool designed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. It provides a clean and intuitive user interface, making calculations quick and easy for users.
+				<div class="div2a"> <label> Using technologies</label>
+						<p> HTML , CSS , JS </p>
+				</div>
+            <button class="clickme"> View Project !</button>
+			</p>
+
+			</div>
+
+
+
+        </section>
+
+         <!-- <section class="section21"> 
+	 <div class="div1" onclick="empty()">
+        	<h4> project 5 </h4>
+        	<p> This project is currently under development and will be available soon. It is aimed at solving real-world problems with a clean and user-friendly interface.
+
+The application will include modern features, efficient performance, and a responsive design to ensure a smooth user experience across all devices. More details, features, and updates will be added as the development progresses.
+
+Stay tuned for upcoming updates!
+		<div class="div1a"> <label> Using technologies</label>
+			<p> HTML , CSS , JS </p>
+		</div>
+		 <button class="clickme"> CLICK ME !</button> 
+		</p>
+        
+		</div> -->
+
+	 <!--  <div class="div2" onclick="empty()">
+
+		<h4 id="bookstore"> project 6</h1>
+		<p>	This project is currently under development and will be available soon. It is aimed at solving real-world problems with a clean and user-friendly interface.
+
+The application will include modern features, efficient performance, and a responsive design to ensure a smooth user experience across all devices. More details, features, and updates will be added as the development progresses.
+
+Stay tuned for upcoming updates!
+		<div class="div2a"> <label> Using technologies</label>
+			<p> HTML , CSS , JS </p>
+		</div>
+				 <button class="clickme"> CLICK ME !</button> 
+		</p>
+
+		</div> -->
+
+
+	<!-- <div class="div2"  onclick="empty()">
+	<h4 > project 7</h1>
+	<p>	This project is currently under development and will be available soon. It is aimed at solving real-world problems with a clean and user-friendly interface.
+
+The application will include modern features, efficient performance, and a responsive design to ensure a smooth user experience across all devices. More details, features, and updates will be added as the development progresses.
+
+Stay tuned for upcoming updates!
+		<div class="div2a"> <label> Using technologies</label>
+			<p> HTML , CSS , JS </p>
+		</div>
+		<button class="clickme"> CLICK ME !</button> 
+	</p>
+
+	</div>-->
+
+	<!-- <div class="div2" onclick="empty()">
+	<h4> This project is currently under development and will be available soon. It is aimed at solving real-world problems with a clean and user-friendly interface.
+
+The application will include modern features, efficient performance, and a responsive design to ensure a smooth user experience across all devices. More details, features, and updates will be added as the development progresses.
+
+Stay tuned for upcoming updates!
+	<div class="div2a"> <label> Using technologies</label>
+		<p> HTML , CSS , JS </p>
+	</div>
+
+	</p>
+
+	</div>
+
+</section> -->
+
+</body>
+<script>
+	let text = "I have developed all these incredible projects using my skills and knowledge.";
+let i = 0;
+
+function typing(){
+    if(i < text.length){
+        document.getElementById("heading").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 10);
+    }
+}
+typing();
+
+
+	function weatherapp() {
+  	window.location.href = "weather.html";
+}
+
+   function libraryproject() {
+  	window.location.href = "AAlibrary26.html";
+}
+       function todoapp() {
+  	window.location.href = "todo-app21.html";
+}
+   function calculator() {
+  	window.location.href = "final_calculator.html";
+}
+function empty(){
+		alert("Page not found");
+}
+</script>
+</html>

@@ -1,0 +1,258 @@
+<html>
+<html>
+<head>
+	<title>Amit Singh</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<style>
+	body{
+		background-color: black;
+		width: 95%;
+	
+	html{
+		font-size: 18px;
+		color: whitesmoke;
+	} 
+
+			.head{
+				
+				height: 30px;
+				text-align: right;
+				width: 100%;
+                border: 2px ;
+			}
+		
+			.hii{
+            border: 2px solid;
+			border-image: linear-gradient(to right, blue, yellow) 1;
+			color: white;
+			position: fixed;
+			width: 98%;
+			background-color: #282424;
+			border-radius: 5px;
+	
+		}
+			.page1{
+				text-decoration: none;
+				padding: 18px;
+				margin: 4px;
+				color: whitesmoke;
+				position: relative ;
+				font-size: 20px;
+				
+
+
+			}
+				
+			.page1:hover
+			    {
+  					text-decoration: none;
+  					color: gray;
+
+  				}
+  				.page1::after{
+  					  content: "";
+					  position: absolute;
+					  width: 0;
+					  height: 2px;
+					  background: #0000ff;
+					  left: 0;
+					  bottom: -5px;
+					  transition: 0.3s;
+					  margin-bottom: 20px;
+  				}
+  				.page1.active::after {
+					  width: 100%;
+					}
+				.page1:hover::after {
+					width: 100%;
+						  
+				}
+
+  				.home{
+							
+					display: flex;
+			        margin-top: 10px;
+                    height: 98%;
+
+				}
+
+				.homeimg{
+					
+					margin-top:0px;
+					width: 6%;
+					padding: 30px;
+					margin: 0%;
+					
+
+				}		
+				.img{
+					border-radius: 40%;
+					height: 250px;
+					
+					
+				}
+				.vline{
+			    width: 2px;
+			    height: 500px;
+			    background: yellow;
+			    margin-left: 20%;
+  				}
+				.text11{
+					
+					width: 80%;
+					padding: 30px;
+					margin-left: 10%;
+					color: whitesmoke;
+					
+						
+				}
+
+				h3{
+                   color: ;
+                   font-size: 22px;
+                   font-style:  italic;
+                   font-size-adjust: 0.5px;
+                    
+				}
+				.span1{
+					font-size: 38px;
+                   text-align: center;
+                   background: linear-gradient(45deg, #ff4d4d, #4d79ff);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                 box-shadow: 0px 4px 10px #ff4d4d;
+                  border-radius: 5px;
+                  
+
+				}
+				p{
+					font-size: 22px;
+				}
+
+			i{
+				color: #000;
+  				font-size: 12px;
+  				background-color: whitesmoke;
+  				text-decoration: none;
+  				margin-top: 100%;
+  			}
+  			.btm1{
+  				font-size: 18px;
+  				background-color: transparent;
+  				color: whitesmoke;
+  				box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  				border: 2px solid;
+  				font-weight: 60px;
+  				border-radius: 16px;
+  				margin-left: 50%;
+
+
+				}
+  			.btm1:hover{
+                 background-color: mediumpurple;
+                 transform: scale(1.3);
+                 box-shadow: 0 0 10px;
+
+  			}
+  			.search{
+  				/*background-color: blueviolet;*/
+  			}
+  			.resume26{
+  				
+  			    text-decoration: none;
+  				font-size: 14px;
+  				padding: 4px;
+  				margin-top: 30%;
+                color: whitesmoke;  
+               width: 20%;
+                border-radius: 15px;
+                box-shadow: 0px 4px 10px #ff4d4d;
+               
+  			}
+  			
+  			
+ 
+                    
+  			
+            
+	</style>
+  			
+			
+</head>
+<body>
+
+	<header class="head">
+		 <!-- <a href="logokri.jpg" class="logo" ></a> -->
+		<nav class="hii">
+			
+		 <a href="portfolio2.html" class="page1 active">Home </a>
+		 <a href="Projects.html" class="page1">Project </a>
+		
+		 <a href="sms.html" class="page1">contact </a>
+		 <a href="About.html" class="page1">About </a>
+		</nav>
+	</header>
+	
+	<section class="home">
+	      <div class="homeimg">
+         	<img src="amit11.jpg" class="img" width="200">
+          
+           </div>
+          
+           	<div class="vline"> </div>
+
+           <div class="text11">
+
+	<h3 class="span1" id ="nameheading"> Hii, I am <br> </h3>
+	<p>
+			I’m front-end developer with strong expertise in HTML, CSS, JavaScript, and React.
+			I have experience in building component-based architectures, handling state management, and integrating APIs.
+			I follow best practices like mobile-first design, code optimization, and cross-browser compatibility.
+			I enjoy converting UI/UX designs into high-quality, interactive web applications.
+			I’m eager to work in a challenging environment where I can add value and sharpen my skills.</p>
+			 <div class="resume">
+   	<a href="amitsingh-resume.pdf" download="amitsingh-resume.pdf" class="resume26"> Resume📄</a>
+   	</div>
+		</div> 
+		
+	</section>
+	 
+<div class="search">
+        
+  
+
+   
+
+
+
+<!-- <div> <button class="btm1"> Hire me !</button> </div> -->
+
+<script>
+	let text = "Amit Kumar singh";
+let i = 0;
+
+function typing(){
+    if(i < text.length){
+        document.getElementById("nameheading").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 50);
+    }
+}
+typing();
+
+const boxes = document.querySelectorAll('.icons');
+
+window.addEventListener('scroll', () => {
+    boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if(boxTop < windowHeight - 100){
+            box.classList.add('show');
+        }
+    });
+});
+
+</script>
+</body>
+</html>

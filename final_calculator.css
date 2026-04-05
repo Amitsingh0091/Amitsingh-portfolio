@@ -1,0 +1,54 @@
+		body{
+			background-image: url(mypro13.jpg);
+		}
+
+		form{
+			 width: 35%;
+			 border: solid;
+			background-image: url(black_wood14.jpg);
+		  
+		}
+
+		.numbtn{
+
+			border-radius: 5px;
+			background-color: transparent;
+			margin: 10px;
+			font-weight: bolder;
+			font-size: 16px;
+			background: linear-gradient(pink,gray,darkseagreen);
+			color: white;
+			box-shadow: 4px 4px 5px red;
+		    width: 50px;
+		    text-align: center;	
+
+
+		}
+
+		.box11{
+			margin-left: 20px;
+			text-align: right;
+		    background-color: transparent;
+		    font-size: 16px;
+			width: 75%;
+			color: white;
+			border: 2px solid;
+			border-color: black;
+		}
+
+		.d1{
+			display: inline-block;
+		}
+		.backbtn{
+			width: 30%;
+			border: 2px solid;
+			border-radius:5px ;
+			background-color: gray;
+			margin-top: 4%;
+
+		}
+		.backbtn:hover{
+			border: 2px solid;
+			border-radius: 5px;
+			color: yellow;
+		}

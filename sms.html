@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact</title>
+	
+ <style>
+ 	body{
+       background: black;
+       
+ 	}
+ 	html{
+ 		font-size: 20px;
+ 	}
+ 	.head{
+			
+				height: 30px;
+				text-align: right;
+				width: 100%;
+
+			}
+			/*.logo{
+				margin-right: 82%;
+				text-decoration: none;
+				color: whitesmoke;
+				font-family: Cascadia Mono;
+			}*/
+			.hii{
+			  position: fixed;
+				width: 96.4%;
+				background-color: #282424;
+				border-radius: 5px;
+				border: 2px solid;
+        border-color: white;
+        border-image: linear-gradient(to right, blue, yellow) 1;
+		}
+
+			.page1{
+				text-decoration: none;
+				padding: 18px;
+				margin: 4px;
+				color: whitesmoke;
+				position: relative ;
+				font-size: 20px;
+			}
+				
+			.page1:hover
+			    {
+  					text-decoration: none;
+  					color: gray;
+
+  				}
+  				.page1::after{
+  					  content: "";
+					  position: absolute;
+					  width: 0;
+					  height: 2px;
+					  background: #0000ff;
+					  left: 0;
+					  bottom: -5px;
+					  transition: 0.3s;
+					  margin-bottom: 20px;
+  				}
+  				.page1.active::after {
+					  width: 100%;
+					}
+					.page1:hover::after {
+						  width: 100%;
+						  
+						}
+ 	h4{
+          color: white;
+         margin-left: 80px;
+ 	}
+
+ 	.d1{
+ 	 background-color: pink;
+ 		margin-left: 5%;
+    height: 30px;
+    border-radius: 4px;
+ 	}
+ 	.d1:hover{
+ 		transform: scale(1.6);
+ 		border: 2px solid;
+ 		color: black;
+ 		background-color: whitesmoke;
+
+ 	}
+
+ 	.maindiv{
+ 		display: flex;
+ 		border: 2px solid;
+ 		width: 88%;
+ 		height: 220px;
+ 		margin-left: 35px;
+    border-radius: 10px;
+     background-color: rgb(64,64,64);
+     color: whitesmoke;
+ 	}
+ /*	.maindiv:hover{
+ 	
+ 		border-radius: 10px;
+ 		border: 2px solid;
+ 		color: yellow;
+ 	}*/
+ 	
+ 	a{
+ 		margin: 5px;
+ 		padding: 30px;
+ 	   font-size: 16px;
+
+ 	}
+ 	.for-sms{
+ 		
+ 		margin-left: 20px;
+ 		border-radius:4px ;
+ 	
+ 	}
+ 	.name{
+ 		margin-left: 52px;
+ 	}
+ 	.email{
+ 		margin-left: 40px;
+ 	}
+ 	.phone{
+ 		margin-left: 10px;
+ 	}
+ 	.textarea{
+ 		margin-left: 120px;
+ 		padding: 5px;
+ 		margin-top: 5px;
+ 		height: 80px;
+ 		border-radius: 4px;
+ 		color: black;
+ 		background-color: transparent;
+ 	}
+ 	input{
+ 		border-radius: 4px;
+ 			background-color: transparent;
+ 	}
+ 	.sendbtn{
+ 		width: 30%;
+   background-color: rgb(64,64,64);
+   margin-left: 50%;
+   border: 2px solid;
+   border-radius: 10px;
+ 	}
+ 	.sendbtn:hover{
+ 		transform: scale(1.2);
+ 		border: 2px solid;
+ 		color: black;
+ 		background-color: greenyellow;
+
+ 	}
+ 	.gobackbtm-about{
+    
+
+    }
+    .gobtn1{
+    	padding: 5px;
+    	margin: 5px;
+    	border: 2px solid;
+    	border-radius: 10px;
+    	 background-color: rgb(0,51,51);
+    	 color: whitesmoke;
+    }
+    .gobtn1:hover{
+  				 box-shadow: 0 5px 5px green;
+		   		background-color: rgb(64,64,64);
+				 
+				  /*transform: scale(1.3);*/
+				  transform: translatey(10px);
+				  color: yellow;
+
+
+		  		}
+ </style>
+</head>
+<body>
+	
+		 <header class="head">
+		 <!-- <a href="#" class="logo"> </a> -->
+		<nav class="hii">
+			
+		 <a href="index.html" class="page1 ">Home </a>
+		 <a href="Projects.html" class="page1">Project </a>
+		
+		 <a href="sms.html" class="page1 active">contact </a>
+		 <a href="About.html" class="page1">About </a>
+		</nav>
+	</header>
+	
+
+				<H4 > Contact Me..</H4>
+			<div class="maindiv">
+
+				<div class="for-sms">
+					
+					<label>NAME:</label>
+				<input type="text " class="name" placeholder="Enter Name" required> <br>
+					<label>	E-MAIL:</label>
+			<input type="email " class="email" placeholder="Enter valid E-mail" required> <br>
+			<label>		PHONE NO:</label>
+			<input type=" number" class="phone"placeholder="Mobile No" required><br>
+				<textarea placeholder="Type Your message" class="textarea"></textarea> <br>
+				<button class="sendbtn">Send  </button>
+			</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

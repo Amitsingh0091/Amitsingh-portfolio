@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> About </title>
+	<style>
+		body{
+               background-color: black;
+               color: whitesmoke;
+
+		}
+		html{
+                  font-size: 16px;
+		}
+    .head{
+        background-color: none;
+        height: 30px;
+        text-align: right;
+        width: 100%;
+
+      }
+      /*.logo{
+        margin-right: 86%;
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: Cascadia Mono;
+      }*/
+      .hii{
+      position: fixed;
+        width: 98%;
+        background-color: #282424;
+        border-radius: 5px;
+        border: 2px solid;
+        border-image: linear-gradient(to right, blue, yellow) 1;
+    }
+      .page1{
+        text-decoration: none;
+        padding: 18px;
+        margin: 4px;
+        color: whitesmoke;
+        position: relative ;
+        font-size: 20px;
+      }
+        
+      .page1:hover
+          {
+            text-decoration: none;
+            color: gray;
+
+          }
+          .page1::after{
+              content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #0000ff;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+            margin-bottom: 20px;
+          }
+          .page1.active::after {
+            width: 100%;
+          }
+          .page1:hover::after {
+              width: 100%;
+              
+            }
+		.intro1{
+			
+		}
+		.span1{
+		   font-style: italic;
+		   font-size: 24;
+		   margin-left: 13px;
+		}
+		.span2{
+		   font-style: italic;
+		   font-size: 24;
+		   margin-left: 7px;
+		}
+		.span3{
+		   font-style: italic;
+		   font-size: 24;
+		   margin-left: 50%
+
+		}
+		.skills1{
+                  font-family: Forte;
+                  font-size:24px ;
+                  font-weight:5px ;
+                  font-size-adjust: ;
+
+            }
+  			.section2{
+  				display: flex;
+  		       
+  			}
+
+  			.btm2{
+  				margin-top: 20px;
+                font-family: Chiller;
+  				background-color: rgb(0,51,51);
+  				border: 2px solid;
+  				padding: 5px;
+                margin: 5px;
+                width: 60px;
+                height: 25px;
+                text-align: center;
+                font-family: ;
+                border-radius: 10px;
+                /*box-shadow: 0 5px 5px gray;*/
+                font-size: 15px;
+                 transition: transform 0.3s ease;
+                
+
+
+  			}
+  			.btm2:hover{
+  				 
+		   		 background-color: rgb(64,64,64);
+				  color: black;
+				  /*transform: scale(1.3);*/
+				  transform: translateY(-10px);
+				  box-shadow: 0 15px 35px pink;
+				  color: yellow;
+
+
+		  		}
+          .edu{
+          	margin-top: 40px;
+          }
+
+  		 .container{
+             display: flex;
+      
+    }
+    .box1{
+      padding: 20px;
+      background-color: rgb(0,51,51);
+      border: 2px solid;
+      width: 250px;
+      height: 100px;
+      text-align: center;
+      margin: 30px;
+      margin: 25px;
+      padding: 25px;
+      /*box-shadow: 0 15px 35px pink;*/
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      
+    }
+    .box1:hover{
+  				 box-shadow: 0 5px 5px yellow;
+		   		background-color: rgb(64,64,64);
+				 
+				  /*transform: scale(1.3);*/
+				  transform: translateX(10px);
+				  color: yellow;
+
+
+		  		}
+    .tenhead{
+    	margin-top: -40px;
+    }
+    .tenthpassyear{
+    	
+    	margin-top: 80px;
+    	width: 35px;
+    	margin-left: 5px;
+    	font-family:Forte ;
+    	font-size:30px ;
+    	font-style: italic;
+
+    }
+    .box2{
+      padding: 20px;
+     background-color: rgb(0,51,51);
+     border: 2px solid;
+     border-radius: 10px;
+      width: 250px;
+      height: 100px;
+      text-align: center;
+      margin: 30px;
+      margin: 25px;
+      padding: 25px;
+      margin-top: 120px;
+      transition: transform 0.3s ease;
+    }
+     .box2:hover{
+  				 box-shadow: 0 5px 5px yellow;
+		   		background-color: rgb(64,64,64);
+				 
+				  /*transform: scale(1.3);*/
+				  transform: translateX(10px);
+				  color: yellow;
+
+
+		  		}
+		 .twelvepassyear{
+		 	
+		 	margin-left:80%;
+		 	margin-top: 20%;
+		 	width: 35px;
+		 	font-family:Forte ;
+    	font-size:30px ;
+    	font-style: italic;
+
+		 } 
+     .grupassyear{
+      
+      margin-top: 80px;
+      width: 130px;
+      margin-left: 7px;
+      font-family:Forte ;
+      font-size:30px ;
+      font-style: italic;
+
+    }	
+    .pgpassyear{
+    
+     margin-left:61%;
+      margin-top: 20%;
+      width: 135px;
+      font-family:Forte ;
+      font-size:30px ;
+      font-style: italic;
+    } 	
+   
+    .box3{
+      padding: 20px;
+      background-color: rgb(0,51,51);
+      border:2px solid;
+      border-radius: 10px;
+      width: 250px;
+      height: 100px;
+      text-align: center;
+      margin: 30px;
+      margin: 25px;
+      padding: 25px;
+      margin-top: 90px;
+      transition: transform 0.3s ease;
+
+    }
+     .box3:hover{
+  				 box-shadow: 0 5px 5px yellow;
+		   		background-color: rgb(64,64,64);
+				 
+				  /*transform: scale(1.3);*/
+				  transform: translateX(-10px);
+				  color: yellow;
+
+
+		  		}
+    .box4{
+      padding: 20px;
+       background-color: rgb(0,51,51);
+       border:2px solid;
+       border-radius: 10px;
+      width: 250px;
+      height: 100px;
+      text-align: center;
+      margin: 30px;
+      margin: 25px;
+      padding: 25px;
+      margin-top: 100px;
+      transition: transform 0.3s ease;
+     
+    }
+     .box4:hover{
+  				 box-shadow: 0 5px 5px yellow;
+		   		background-color: rgb(64,64,64);
+				 
+				  /*transform: scale(1.3);*/
+				  transform: translateX(-10px);
+				  color: yellow;
+
+
+		  		}
+    .leftside{
+    	margin-left: 15%;
+    }
+    
+
+    .line{
+      width: 2px;
+      background: yellow;
+    }
+    .gobackbtm-about{
+    	
+    	margin-left:40%;
+    }
+    .gobtn1{
+    	padding: 5px;
+    	margin: 5px;
+    	border: 2px solid;
+    	border-radius: 10px;
+    	 background-color: rgb(0,51,51);
+    }
+    .gobtn1:hover{
+  				 box-shadow: 0 5px 5px green;
+		   		background-color: rgb(64,64,64);
+				 
+				  /*transform: scale(1.3);*/
+				  transform: translatey(10px);
+				  color: yellow;
+
+
+		  		}
+    
+       .resume{
+       
+        width: 30%;
+        height: 100px;
+        font-size: 18px;
+        border: 2px solid;
+        border-radius: 10px;
+        margin-left: 5px;
+       }  
+       .resume-heading{
+        text-align: center;
+
+       } 
+       .resume-v{
+        margin: 5px;
+        text-decoration: none;
+        color: white;
+        border: 2px solid;
+        border-radius: 8px;
+
+       }
+       .resume:hover{
+        border: 2px solid;
+        color: yellow;
+        transform: scale(0.9);
+       }
+       .resume-v:hover{
+        border: 1px solid;
+        background-color: #292727;
+       }
+	</style>
+</head>
+<body>
+          <header class="head">
+     <!-- <a href="#" class="logo"></a> -->
+    <nav class="hii">
+      
+     <a href="index.html" class="page1 ">Home </a>
+     <a href="Projects.html" class="page1">Project </a>
+    
+     <a href="sms.html" class="page1">contact </a>
+     <a href="About.html" class="page1 active">About </a>
+    </nav>
+  </header>
+ 
+    <section class="home2"> <label class="skills1"> 💻SKILL </label>
+    	<HR>
+    	<div class="section2">
+
+    	<div class="btm2"> HTML </div>
+    	<div class="btm2"> CSS </div>
+    	<div class="btm2"> JS </div>
+     	<div class="btm2"> REACT.JS </div>
+     	<div class="btm2" style="font-size: 20px;"> C </div>
+    	<div class="btm2"> JAVA </div>
+    	<div class="btm2"> MANGODB </div>
+    	<div class="btm2"> NODE.JS </div>
+    	<div class="btm2"> MYSQL </div> 
+    	<div class="btm2"> BOOTSTRAP </div>
+
+	</div>
+    </section>
+    
+    <div class="edu"> <label class="skills1"> 🎓EDUCATION</label> <hr>
+
+    	 <div class="container">
+    	 	<div class="leftside">
+   				 <div class="box1">
+   				 	<h2 class="tenhead"> <H3>10<sup>th</sup> BIHAR BORRD </h1>
+   				 	<p class="tenpara">NAV JOYTI HIGH SCHOOL KUKURHA BUXAR(BIHAR)</p>
+   				 	<span class="tenspan">DIVISION: SECOND (57.4%)</span>
+   				 </div> 
+   				 <div class="twelvepassyear"> 2020</div>
+     			 <div class="box2">
+   				 	<h2 class="tenhead"> <h3> BACHELOR COMPUTER OF APPLICATION (BCA)</h3>
+   				 	<p class="bcapara"> SHER SHAH COLLEGE SASARAM ROHTAS (BIHAR)</p>
+   				 	<span class="bcaspan">DIVISION: FIRST (70.41%)</span>
+   				 </div> 
+           <div class="pgpassyear"> 2024-2026</div>
+     		</div>
+     
+    <div class="line"></div>
+
+    <div class="rightside">
+    	<div class="tenthpassyear"> 2017</div>
+   				  <div class="box3">
+   				  	
+   				 	<h2 class="tenhead"><h3>12<sup>th</sup> UP BORRD </h1>
+   				 	<p class="twelvepara">R.K.G.A.I.C DIDDARNAGAR GHAZIPUT (UP)</p>
+   				 	<span class="twelvespan">DIVISION: SECOND (57%)</span>
+   				 </div> 
+           <div class="grupassyear"> 2020-2023</div>
+     			 <div class="box4">
+   				 	<h2 class="tenhead"> <h3> MASTER COMPUTER OF APPLICATION (BCA)</h3>
+   				 	<p class="bcapara">IIMT GROUP OF COLLEGE GREATER NOIDA (UP)</p>
+   				 	<span class="bcaspan">SGPA: COMMING SOON</span>
+   				 </div>
+     </div>
+    </div>
+ </section>
+
+ <footer>
+ 	 <div class="intro1">
+  	 <p class="para1"> <span class="span1"> I am ,</span> <br>
+        <span class="span2"> AMIT KUMAR SINGH </span> <br> <br>I am from Bihar and i live in greater noida.I have completed my graduation.I am a disciplined and positive person.I enjoy learning new things and working with people. <br>
+					<span class="span3">Thank you ...😎 </span>
+  	 </p>
+
+  </div>
+ <!--  <div class="resume"><h3 class="resume-heading"> RESUME</h3>
+  <a href="amitsingh-resume.pdf" target="_blank" class="resume-v">
+    View Resume
+  </a>
+
+  <a href="amitsingh-resume.pdf" download="amitsingh-resume.pdf" class="resume-v">
+    Download Resume
+  </a>
+</div> -->
+ </footer>
+<!-- <div class="footbtm">
+	<div class="gobackbtm-about">
+		   <a href="portfolio2.html"> <button class="gobtn1"> HOME</button></a>
+		   <a href=""> <button class="gobtn1"> PROJECT</button></a>
+		   <a href=""> <button class="gobtn1"> CONTACT</button></a>
+	</div>
+</div> -->
+   
+</body>
+</html>
